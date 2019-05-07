@@ -9,7 +9,7 @@
 * flowering (y/n)
 * succulent (y/n)
 * Medicinal properties
-* Expore by pet safety
+* Explore by pet safety
 * Clean air
 * Care instructions
 * Propagation --> y/n
