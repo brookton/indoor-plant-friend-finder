@@ -1,14 +1,10 @@
-Indoor Plant Friend Finder
-“Plant me Baby” with Britney references
+# Indoor Plant Friend Finder
+## “Plant me Baby”
 
-Columns 
+### Columns 
 * Explore by name
-* dificulty rating
->> temperature
->> watering frequency
->> succulent
-* light
->> temperature
+* dificulty rating (temperature, watering frequency)
+* light (temperature)
 * type
 * flowering (y/n)
 * succulent (y/n)
@@ -19,11 +15,11 @@ Columns
 * Propagation --> y/n
 * Google image link
 
-Welcome Message
+## Welcome Message
 
-"Welcome to Plant Me Baby -- the Indoor Plant Friend Finder"
+### "Welcome to Plant Me Baby -- the Indoor Plant Friend Finder"
 
-"How would you like to find your plant?"
+### "How would you like to find your plant?"
 
 1. Take the plant friend finder quiz!
 2. Explore air improving plants
