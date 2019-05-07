@@ -25,13 +25,13 @@ Welcome Message
 
 "How would you like to find your plant?"
 
--Take the plant friend finder quiz!
--Explore air improving plants
--Explore easy to grow plants
--Explore plants with medicinal properties
--Explore flowering indoor plants
--Explore pet safe plants 
--Name your plant with our Plant Baby Name Generator!
+- Take the plant friend finder quiz!
+- Explore air improving plants
+- Explore easy to grow plants
+- Explore plants with medicinal properties
+- Explore flowering indoor plants
+- Explore pet safe plants 
+- Name your plant with our Plant Baby Name Generator!
 
 
 To complete today: psuedo code. define methods. ask an instructor.
