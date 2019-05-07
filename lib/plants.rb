@@ -1,1 +1,3 @@
-test
+class Plant
+
+end

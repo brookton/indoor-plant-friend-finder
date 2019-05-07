@@ -1,10 +1,10 @@
 # Indoor Plant Friend Finder
 ## “Plant me Baby”
 
-### Columns 
+### Columns
 * Explore by name
-* dificulty rating (temperature, watering frequency)
-* light (temperature)
+* dificulty rating (watering frequency)
+* light
 * type
 * flowering (y/n)
 * succulent (y/n)
@@ -26,7 +26,7 @@
 3. Explore easy to grow plants
 4. Explore plants with medicinal properties
 5. Explore flowering indoor plants
-6. Explore pet safe plants 
+6. Explore pet safe plants
 7. Name your plant with our Plant Baby Name Generator!
 
 
