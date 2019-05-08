@@ -8,7 +8,7 @@ class PlantsTable < ActiveRecord::Migration[5.2]
       t.boolean :succulent
       t.text :medicinal
       t.boolean :safe
-      t.boolean :clean
+      t.boolean :clean_air
       t.text :care
       t.boolean :propogation
       t.text :images

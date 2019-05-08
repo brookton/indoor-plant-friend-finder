@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2019_05_07_230318) do
     t.boolean "succulent"
     t.text "medicinal"
     t.boolean "safe"
-    t.boolean "clean"
+    t.boolean "clean_air"
     t.text "care"
     t.boolean "propogation"
     t.text "images"
