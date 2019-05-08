@@ -1,4 +1,4 @@
-require_relative '../lib/plants.rb'
+require_relative '../lib/plant.rb'
 require 'require_all'
 require 'pry'
 #require 'bundler'
