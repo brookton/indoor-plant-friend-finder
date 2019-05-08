@@ -1,7 +1,7 @@
-require_relative './plants_controller.rb'
+require_relative '../config/environment.rb'
 require 'colored'
 
-class NewApp
+class NewApp < ActiveRecord::Base
 
   def self.welcome
     puts ""
@@ -28,7 +28,8 @@ class NewApp
     when "1"
       puts "good for you!".red.on_green
     when "2"
-      puts "good for you!".red.on_green
+      puts air_improvement
+      binding.pry
     when "3"
       puts "good for you!".red.on_green
     when "4"

@@ -1,7 +1,11 @@
+#class PlantControl < ActiveRecord::Base
+#  belongs_to :NewApp
+
 def quiz
 end
 
-def air_improvment
+def air_improvement
+  Plant.where(clean_air: true)
 end
 
 def easy_to_grow
@@ -19,3 +23,5 @@ end
 def name_generator
 
 end
+
+#end
