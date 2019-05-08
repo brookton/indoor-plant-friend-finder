@@ -41,6 +41,8 @@ class NewApp
       puts "good for you!".red.on_green
     when "8"
       puts "good for you!".red.on_green
+    when "exit"
+      puts "good for you!".red.on_green
     when "no"
       puts "ok then... try again".red.on_yellow
       self.intro
