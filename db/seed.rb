@@ -1,0 +1,1 @@
+Plants.destroy_all
