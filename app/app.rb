@@ -1,10 +1,15 @@
+require_relative './plants_controller.rb'
 require 'colored'
 
 class NewApp
 
-  def self.intro
+  def self.welcome
+    puts ""
     puts "Welcome to Plant Me Baby -- your indoor plant friend finder.".bold.green.on_blue
     puts ""
+  end
+
+  def self.intro
     puts "How would you like to find your perfect plant?".bold.blue.on_green
     puts " 1 ".bold.magenta.on_green + " - Take the plant friend finder quiz!".red
     puts " 2 ".bold.magenta.on_green + " - Explore air improving plants.".magenta
@@ -15,20 +20,36 @@ class NewApp
     puts " 7 ".bold.magenta.on_green + " - Name your plant with our Plant Baby Name Generator!".magenta
     puts " 8 ".bold.magenta.on_green + " - Exit".yellow
     @@selection = gets.chomp
-    self.evaluates
+    self.evaluate
   end
 
   def self.evaluate
-    if @@selection == "8"
+    case @@selection
+    when "1"
       puts "good for you!".red.on_green
-    elsif @@selection == "no"
-      puts "you're a boner".red.on_yellow
+    when "2"
+      puts "good for you!".red.on_green
+    when "3"
+      puts "good for you!".red.on_green
+    when "4"
+      puts "good for you!".red.on_green
+    when "5"
+      puts "good for you!".red.on_green
+    when "6"
+      puts "good for you!".red.on_green
+    when "7"
+      puts "good for you!".red.on_green
+    when "8"
+      puts "good for you!".red.on_green
+    when "no"
+      puts "ok then... try again".red.on_yellow
       self.intro
     else
-      puts "you might need help wiht your typing sillzzz".yellow.on_red
+      puts "That was an unknown command. Please try again.".red.on_yellow
+      puts ""
       self.intro
     end
   end
-
-  self.intro
+    self.welcome
+    self.intro
 end
