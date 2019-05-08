@@ -10,5 +10,5 @@ require 'sinatra/activerecord/rake'
 desc "run"
 task :run do
   # Your code goes here
-  ruby './config/environment.rb'
+  ruby './app/app.rb'
 end

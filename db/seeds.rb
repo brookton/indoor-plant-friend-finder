@@ -1,7 +1,6 @@
 Plant.destroy_all
 
-orchid = Plant.create
-(
+orchid = Plant.create(
   name: "Orchid",
   difficulty: 5,
   light: "bright indirect light",
@@ -20,8 +19,7 @@ orchid = Plant.create
   images: "https://google.com/search?q=orchid&tbm=isch"
 )
 
-amaryllis  = Plant.create
-(
+amaryllis  = Plant.create(
   name: "Amaryllis",
   difficulty: 2,
   light: "bright light",
@@ -40,8 +38,7 @@ amaryllis  = Plant.create
   images: "https://google.com/search?q=Amaryllis&tbm=isch"
 )
 
-spider_lily = Plant.create
-(
+spider_lily = Plant.create(
   name: "Spider Lily",
   difficulty: 3,
   light: "bright light",
@@ -59,8 +56,7 @@ spider_lily = Plant.create
   images: "https://google.com/search?q=spider%20lily&tbm=isch"
 )
 
-bird_of_paradise = Plant.create
-(
+bird_of_paradise = Plant.create(
   name: "Bird of Paradise",
   difficulty: 1,
   light: "bright indirect light",
@@ -83,8 +79,7 @@ bird_of_paradise = Plant.create
   images: "https://google.com/search?q=bird%20of%20paradise&tbm=isch"
 )
 
-calla_lily = Plant.create
-(
+calla_lily = Plant.create(
   name: "Calla lily",
   difficulty: 2,
   light: "bright light",
