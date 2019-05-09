@@ -16,9 +16,10 @@ class NewApp < ActiveRecord::Base
     puts " 3 ".bold.magenta.on_green + " - Explore easy to grow plants.".yellow
     puts " 4 ".bold.magenta.on_green + " - Explore plants with medicinal properties.".green
     puts " 5 ".bold.magenta.on_green + " - Explore flowering indoor plants.".cyan
-    puts " 6 ".bold.magenta.on_green + " - Explore pet safe plants.".red
-    puts " 7 ".bold.magenta.on_green + " - Name your plant with our Plant Baby Name Generator!".magenta
-    puts " 8 ".bold.magenta.on_green + " - Exit".yellow
+    puts " 6 ".bold.magenta.on_green + " - Explore pet and baby safe plants.".red
+    puts " 7 ".bold.magenta.on_green + " - Explore succulents and cacti.".magenta
+    puts " 8 ".bold.magenta.on_green + " - Name your plant with our Plant Baby Name Generator!".yellow
+    puts " 9 ".bold.magenta.on_green + " - Exit".green
     @@selection = gets.chomp
     self.evaluate
   end
@@ -31,23 +32,32 @@ class NewApp < ActiveRecord::Base
       air_improvement
       #binding.pry
     when "3"
-      puts "good for you!".red.on_green
+      easy_to_grow
     when "4"
-      puts "good for you!".red.on_green
+      medicinal
     when "5"
-      puts "good for you!".red.on_green
+      flowering
     when "6"
-      puts "good for you!".red.on_green
+      pet_safe
     when "7"
-      puts "good for you!".red.on_green
+      low_water
     when "8"
+      puts "good for you!".red.on_green
+    when "9"
+      puts ""
       puts "Okay! Bye!".red.on_green
+      puts ""
     when "exit"
+      puts ""
       puts "Okay! Bye!".red.on_green
+      puts ""
     when "no"
+      puts ""
       puts "Ok then... If you still want a friend, try again.".red.on_yellow
+      puts ""
       self.intro
     else
+      puts ""
       puts "That was an unknown command. Please try again.".red.on_yellow
       puts ""
       self.intro
