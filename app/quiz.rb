@@ -11,6 +11,8 @@ require_relative '../config/environment.rb'
 
 class Quiz < ActiveRecord::Base
 
+  user_hash = {}
+
   def welcome_quiz
     puts ""
     puts "Welcome to the Plant Me Baby Friend Finder Quiz!.".bold.green.on_blue
@@ -41,11 +43,11 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      #some how store light: "bright"
+      user_hash[light:] = "bright"
     when "2"
-      #some how store light: "indirect"
+      user_hash[light:] = "indirect"
     when "3"
-      #some how store light: low
+      user_hash[light:] = "low"
     when "exit"
       NewApp.intro
     end
@@ -62,16 +64,16 @@ def prompt_to_stay_or_go
     puts "Let's talk fur babies and fuzz babies!"
     puts ""
     puts "Or type 'exit' to return to the main menu."
-    puts "Do you need to wory about a plat's toxicity?".bold.blue.on_green
+    puts ""
+    puts "Do you need to wory about a plant's toxicity?".bold.blue.on_green
     puts " 1 ".bold.blue.on_green + "Yes".red
     puts " 2 ".bold.blue.on_green + "No".magenta
-    puts " 3 ".bold.blue.on_green + "Low".yellow
     x = gets.chomp
     case x
     when "1"
-      #some how store light: "bright"
+      user_hash[safe:] = true
     when "2"
-      #some how store light: "indirect"
+      user_hash[safe:] = false
     when "exit"
       NewApp.intro
     end
@@ -89,11 +91,11 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      #some how store light: "bright"
+      user_hash[care:] = 1
     when "2"
-      #some how store light: "indirect"
+      user_hash[care:] = 2
     when "3"
-      #some how store light: low
+      user_hash[care:] = 3
     when "exit"
       NewApp.intro
     end
@@ -110,9 +112,9 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      #some how store light: "bright"
+      user_hash[clean_air:] = true
     when "2"
-      #some how store light: "indirect"
+      user_hash[clean_air:] = true
     when "exit"
       NewApp.intro
     end
@@ -129,9 +131,9 @@ def prompt_to_stay_or_go
       x = gets.chomp
       case x
       when "1"
-        #some how store light: "bright"
+        user_hash[medicnal:] = "bright"
       when "2"
-        #some how store light: "indirect"
+        user_hash[medicnal:] = "bright"
       when "exit"
         NewApp.intro
       end
@@ -150,9 +152,9 @@ def prompt_to_stay_or_go
       x = gets.chomp
       case x
       when "1"
-        #some how store light: "bright"
+        user_hash[flowering:] = "bright"
       when "2"
-        #some how store light: "indirect"
+        user_hash[flowering:] = "bright"
       when "exit"
         NewApp.intro
       end
@@ -164,4 +166,11 @@ def prompt_to_stay_or_go
     end
 
     prompt_to_return
+
+    def result
+      Plant.where(user_hash)
+    end
+
+
+
   end
