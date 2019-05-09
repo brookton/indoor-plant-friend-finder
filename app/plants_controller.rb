@@ -8,7 +8,7 @@ def air_improvement
     empty
   else
       puts ""
-      puts "Here's are names of NASA's Clean Air Certified indoor plants.".bold.green.on_blue
+      puts "Here's are NASA's Clean Air Certified indoor plants.".bold.green.on_blue
       puts ""
       puts "Select a number for more info or exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
