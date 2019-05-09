@@ -28,7 +28,7 @@ class NewApp < ActiveRecord::Base
     when "1"
       puts "good for you!".red.on_green
     when "2"
-      puts air_improvement
+      air_improvement
       #binding.pry
     when "3"
       puts "good for you!".red.on_green

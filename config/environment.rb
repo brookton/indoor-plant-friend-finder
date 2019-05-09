@@ -4,6 +4,8 @@ require 'require_all'
 require 'pry'
 #require 'bundler'
 require 'sinatra/activerecord'
+require 'awesome_print'
+require 'colored'
 #require 'sinatra/activerecord/rake'
 
 #Bundler.require
