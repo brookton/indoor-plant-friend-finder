@@ -18,7 +18,7 @@ class NewApp < ActiveRecord::Base
     puts " 5 ".bold.blue.on_green + " - Explore flowering indoor plants.".cyan
     puts " 6 ".bold.blue.on_green + " - Explore pet and baby safe plants.".red
     puts " 7 ".bold.blue.on_green + " - Explore succulents and cacti.".magenta
-    puts " 8 ".bold.blue.on_green + " - Name your plant with our Plant Baby Name Generator!".yellow
+    puts " 8 ".bold.blue.on_green + " - Name your plant with our Old Lady Plant Name Generator!".yellow
     puts " 9 ".bold.blue.on_green + " - Exit".green
     @@selection = gets.chomp
     self.evaluate
@@ -28,7 +28,7 @@ class NewApp < ActiveRecord::Base
     case @@selection
     when "1"
       Quiz.welcome_quiz
-      
+
 
     when "2"
       air_improvement
