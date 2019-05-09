@@ -1,35 +1,37 @@
 require_relative '../config/environment.rb'
 
-  def plant_quiz
-    not_ready
-  end
+  #def plant_quiz
+  #  not_ready
+  #end
 
-#how am i going to store all of this instance of users information?
-#then compare this list of attributes to our database
-#return the item in our database that has these atributes
-#are there any variations of these questions that return no plant?
+
 
 class Quiz < ActiveRecord::Base
 
   user_hash = {}
 
-  def welcome_quiz
+  def self.next_question
+    puts "Next Question!"
+  end
+
+  def self.welcome_quiz
     puts ""
     puts "Welcome to the Plant Me Baby Friend Finder Quiz!.".bold.green.on_blue
     puts ""
+    quiz_q_1
   end
 
-def prompt_to_stay_or_go
-    puts "Type 'stay' to continue or any key to go back to the main menu!"
-    x = gets.chomp
-    case x
-    when "stay"
-      puts "Woohoo here we go!"
-      quiz_q_1
-    else
-      NewApp.intro
-    end
-  end
+# def self.prompt_to_stay_or_go
+#     puts "Type 'stay' to continue or any key to go back to the main menu!"
+#     x = gets.chomp
+#     case x
+#     when "stay"
+#       puts "Woohoo here we go!"
+#       quiz_q_1
+#     else
+#       NewApp.intro
+#     end
+#   end
 
   def quiz_q_1
     puts ""
@@ -40,24 +42,25 @@ def prompt_to_stay_or_go
     puts " 1 ".bold.blue.on_green + "Bright".red
     puts " 2 ".bold.blue.on_green + "Indirect".magenta
     puts " 3 ".bold.blue.on_green + "Low".yellow
+    exit_or_quit
     x = gets.chomp
     case x
     when "1"
-      user_hash[light:] = "bright"
+      user_hash[:light] = "bright"
     when "2"
-      user_hash[light:] = "indirect"
+      user_hash[:light] = "indirect"
     when "3"
-      user_hash[light:] = "low"
+      user_hash[:light] = "low"
     when "exit"
       NewApp.intro
+    when "quit"
+      bye
     end
+    next_question
+    quiz_q_2
   end
 
-  def next_question
-    puts "Next Question!"
-  end
 
-  next_question
 
   def quiz_q_2
     puts ""
@@ -71,15 +74,17 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      user_hash[safe:] = true
+      user_hash[:safe] = true
     when "2"
-      user_hash[safe:] = false
+      user_hash[:safe] = false
     when "exit"
       NewApp.intro
     end
+    next_question
+    quiz_q_3
   end
 
-  next_question
+
 
   def quiz_q_3
     puts ""
@@ -91,17 +96,19 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      user_hash[care:] = 1
+      user_hash[:care] = 1
     when "2"
-      user_hash[care:] = 2
+      user_hash[:care] = 2
     when "3"
-      user_hash[care:] = 3
+      user_hash[:care] = 3
     when "exit"
       NewApp.intro
     end
+    next_question
+    quiz_q_4
   end
 
-  next_question
+
 
   def quiz_q_4
     puts ""
@@ -112,15 +119,17 @@ def prompt_to_stay_or_go
     x = gets.chomp
     case x
     when "1"
-      user_hash[clean_air:] = true
+      user_hash[:clean_air] = true
     when "2"
-      user_hash[clean_air:] = true
+      user_hash[:clean_air] = true
     when "exit"
       NewApp.intro
     end
+    next_question
+    quiz_q_5
   end
 
-    next_question
+
 
     def quiz_q_5
       puts ""
@@ -131,15 +140,17 @@ def prompt_to_stay_or_go
       x = gets.chomp
       case x
       when "1"
-        user_hash[medicnal:] = "bright"
+        user_hash[:medicnal] = "bright"
       when "2"
-        user_hash[medicnal:] = "bright"
+        user_hash[:medicnal] = "bright"
       when "exit"
         NewApp.intro
       end
+      next_question
+      quiz_q_6
     end
 
-    next_question
+
 
     def quiz_q_6
       puts ""
@@ -152,23 +163,26 @@ def prompt_to_stay_or_go
       x = gets.chomp
       case x
       when "1"
-        user_hash[flowering:] = "bright"
+        user_hash[:flowering] = "bright"
       when "2"
-        user_hash[flowering:] = "bright"
+        user_hash[:flowering] = "bright"
       when "exit"
         NewApp.intro
       end
+      quiz_comlete
+      quiz_result
     end
 
     def quiz_comlete
       puts "Here is your new plant friend!"
-      puts result
+      #quiz_result
+      #prompt_to_return
     end
 
-    prompt_to_return
 
-    def result
-      Plant.where(user_hash)
+
+    def quiz_result(user_hash)
+      puts Plant.where(user_hash)
     end
 
 

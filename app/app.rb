@@ -27,7 +27,9 @@ class NewApp < ActiveRecord::Base
   def self.evaluate
     case @@selection
     when "1"
-      plant_quiz
+      Quiz.welcome_quiz
+      
+
     when "2"
       air_improvement
       #binding.pry
