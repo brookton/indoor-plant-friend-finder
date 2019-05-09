@@ -11,7 +11,7 @@
   2. `cd` into folder using cli
   3. `bundle install` required gems
   4. Setup database with `rake db:migrate`
-  5. *seed* your database with existing datapoints using `rake db:seed`
+  5. *seed* your database with existing data points using `rake db:seed`
   6. Run the cli! Explore new plants using `rake run`
 
 ## Usage
