@@ -212,7 +212,7 @@ class Quiz < ActiveRecord::Base
       #hash = {:light => "bright", :difficulty => 3}
       arr = Array.new
       arr = Plant.where(@@user_hash).pluck(:name)
-      binding.pry
+      #binding.pry
       if arr.length == 0
         puts ""
         puts "Sorry, we weren't able to match you."

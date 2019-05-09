@@ -12,6 +12,7 @@ require 'colored'
 #require 'sinatra/activerecord/rake'
 
 #Bundler.require
+ActiveRecord::Base.logger = nil
 
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
