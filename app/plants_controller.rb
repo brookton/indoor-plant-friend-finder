@@ -4,21 +4,20 @@ require_relative '../config/environment.rb'
 
 def air_improvement
   arr = Plant.where(clean_air: true).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here's are NASA's Clean Air Certified indoor plants.".bold.green.on_blue
       puts ""
       puts "Select a number for more info or exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         if x == "exit"
           NewApp.intro
         elsif x == "quit"
@@ -34,28 +33,22 @@ def air_improvement
     end
 end
 
-def plant_info(name)
-  ap Plant.find_by(name: name)
-  prompt_to_return
-end
-
 def easy_to_grow
   arr = Plant.where(difficulty: 1).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here's are names of easy to grow plants.".bold.green.on_blue
       puts ""
       puts "Select a number for more info or exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         #binding.pry
         if x == "exit"
           NewApp.intro
@@ -75,22 +68,21 @@ end
 
 def medicinal
   arr = Plant.where(medicinal: true).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here's are names of medicinal plants.".bold.green.on_blue
       puts ""
       puts "Select a number for more info on their medicinal properties".bold.blue.on_green
       puts "or type exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         #binding.pry
         if x == "exit"
           NewApp.intro
@@ -110,9 +102,9 @@ end
 
 def flowering
   arr = Plant.where(flowering: true).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here's are some wonderful flowering plant friends.".bold.green.on_blue
       puts "They're really pretty to have around".bold.green.on_blue
@@ -120,13 +112,12 @@ def flowering
       puts "Select a number for more information.".bold.blue.on_green
       puts "or type exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         #binding.pry
         if x == "exit"
           NewApp.intro
@@ -146,9 +137,9 @@ end
 
 def pet_safe
   arr = Plant.where(safe: true).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here's are plant friends that are non-toxic if ingested.".bold.green.on_blue
       puts "If you have a hungry pet or starving baby, these are safe to keep around.".bold.green.on_blue
@@ -156,13 +147,12 @@ def pet_safe
       puts "Select a number for more information.".bold.blue.on_green
       puts "or type exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         #binding.pry
         if x == "exit"
           NewApp.intro
@@ -182,9 +172,9 @@ end
 
 def low_water
   arr = Plant.where(succulent: true).pluck(:name)
-  if arr.length == 0
-    empty
-  else
+    if arr.length == 0
+      empty
+    else
       puts ""
       puts "Here are succulent and cacti plants.".bold.green.on_blue
       puts "They're super easy maintenence and require infrequent watering.".bold.green.on_blue
@@ -192,13 +182,12 @@ def low_water
       puts "Select a number for more information.".bold.blue.on_green
       puts "or type exit to return to main menu.".bold.blue.on_green
         arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
-      puts "exit".bold.green.on_magenta + " - " + "Main Menu"
-      puts "quit".bold.red.on_green + " - " + "Quit"
-      z = arr.length
-      x = gets.chomp
-      q = x.to_i
+        exit_or_quit
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
         #binding.pry
         if x == "exit"
           NewApp.intro

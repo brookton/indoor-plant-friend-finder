@@ -11,15 +11,15 @@ class NewApp < ActiveRecord::Base
   def self.intro
     puts ""
     puts "How would you like to find your perfect plant?".bold.blue.on_green
-    puts " 1 ".bold.magenta.on_green + " - Take the plant friend finder quiz!".red
-    puts " 2 ".bold.magenta.on_green + " - Explore air improving plants.".magenta
-    puts " 3 ".bold.magenta.on_green + " - Explore easy to grow plants.".yellow
-    puts " 4 ".bold.magenta.on_green + " - Explore plants with medicinal properties.".green
-    puts " 5 ".bold.magenta.on_green + " - Explore flowering indoor plants.".cyan
-    puts " 6 ".bold.magenta.on_green + " - Explore pet and baby safe plants.".red
-    puts " 7 ".bold.magenta.on_green + " - Explore succulents and cacti.".magenta
-    puts " 8 ".bold.magenta.on_green + " - Name your plant with our Plant Baby Name Generator!".yellow
-    puts " 9 ".bold.magenta.on_green + " - Exit".green
+    puts " 1 ".bold.blue.on_green + " - Take the plant friend finder quiz!".red
+    puts " 2 ".bold.blue.on_green + " - Explore air improving plants.".magenta
+    puts " 3 ".bold.blue.on_green + " - Explore easy to grow plants.".yellow
+    puts " 4 ".bold.blue.on_green + " - Explore plants with medicinal properties.".green
+    puts " 5 ".bold.blue.on_green + " - Explore flowering indoor plants.".cyan
+    puts " 6 ".bold.blue.on_green + " - Explore pet and baby safe plants.".red
+    puts " 7 ".bold.blue.on_green + " - Explore succulents and cacti.".magenta
+    puts " 8 ".bold.blue.on_green + " - Name your plant with our Plant Baby Name Generator!".yellow
+    puts " 9 ".bold.blue.on_green + " - Exit".green
     @@selection = gets.chomp
     self.evaluate
   end

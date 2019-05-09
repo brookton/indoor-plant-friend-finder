@@ -1,5 +1,10 @@
 require_relative '../config/environment.rb'
 
+def plant_info(name)
+  ap Plant.find_by(name: name)
+  prompt_to_return
+end
+
 def not_ready
   puts ""
   puts "This feature is not yet ready!".green.on_red
@@ -43,4 +48,9 @@ def numbered(arr)
     arr.each_with_index do |name, index|
       puts "#{index+1}. " + name
     end
+end
+
+def exit_or_quit
+  puts "exit".bold.green + " - " + "Main Menu"
+  puts "quit".bold.green + " - " + "Quit"
 end

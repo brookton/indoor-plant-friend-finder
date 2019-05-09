@@ -7,3 +7,5 @@ gem "pry"
 gem "require_all"
 
 gem "sinatra", "~> 2.0"
+gem "awesome_print"
+gem "colored"
