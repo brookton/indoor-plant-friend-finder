@@ -3,8 +3,8 @@
 
 ## Purpose
   * A Ruby CLI / CRUD app that seeds tons of popular indoor plant varieties
-  * Allows the user to take a quiz to find the best indoor plant for their enviornment
-  * Features an "Old Lady Plant Name Generator" which allows users to create names for exisiting plants
+  * Allows the user to take a quiz to find the best indoor plant for their environment
+  * Features an "Old Lady & Friends Plant Name Generator" which allows users to create names for existing plants
 
 ## Installation
   1. Fork / Clone repository
