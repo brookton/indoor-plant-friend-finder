@@ -27,7 +27,7 @@ class NewApp < ActiveRecord::Base
   def self.evaluate
     case @@selection
     when "1"
-      puts "good for you!".red.on_green
+      plant_quiz
     when "2"
       air_improvement
       #binding.pry
@@ -42,7 +42,7 @@ class NewApp < ActiveRecord::Base
     when "7"
       low_water
     when "8"
-      puts "good for you!".red.on_green
+      name_gen
     when "9"
       puts ""
       puts "Okay! Bye!".red.on_green
