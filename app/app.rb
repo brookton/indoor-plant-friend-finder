@@ -45,7 +45,7 @@ class NewApp < ActiveRecord::Base
     when "exit"
       puts "Okay! Bye!".red.on_green
     when "no"
-      puts "ok then... try again".red.on_yellow
+      puts "Ok then... If you still want a friend, try again.".red.on_yellow
       self.intro
     else
       puts "That was an unknown command. Please try again.".red.on_yellow
