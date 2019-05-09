@@ -28,7 +28,7 @@ class NewApp < ActiveRecord::Base
     case @@selection
     when "1"
       Quiz.welcome_quiz
-      Quiz.prompt_to_stay_or_go
+      
 
     when "2"
       air_improvement
