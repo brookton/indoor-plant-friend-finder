@@ -1,5 +1,7 @@
 require_relative '../app/plant.rb'
 require_relative '../app/plants_controller.rb'
+require_relative '../app/plants_namer.rb'
+require_relative '../app/quiz.rb'
 require 'require_all'
 require 'pry'
 #require 'bundler'
