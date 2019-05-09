@@ -19,7 +19,7 @@ require "colored"
     sleep 1
     puts "       " + "YOUR PLANT NAME IS:".blue.on_green
     sleep 1
-    @names = ["Barbra", "Beatrice", "Bernadine", "Colleen", "Edith", "Betty", "Carol", "Deborah", "Doris", "Jewel", "Helen", "Lenora", "Lorene", "Elanor", "Gwendolyn", "Meredith", "Gammie", "Bertha", "Muriel", "Noreen", "Trudy"]
+    @names = ["Sofie", "Tipper", "Jack", "Philip", "Pookie", "Arnold", "T-rex", "Lil-Dub", "Thing", "Mr. Snuggles", "Gammie", "X74321", "David", "Jessie", "Joe", "Barbra", "Beatrice", "Bernadine", "Colleen", "Edith", "Betty", "Carol", "Deborah", "Doris", "Jewel", "Helen", "Lenora", "Lorene", "Elanor", "Gwendolyn", "Meredith", "Gammie", "Bertha", "Muriel", "Noreen", "Trudy"]
     puts " "
     sleep 1
     puts "             " + " #{@names.sample} ".blue.on_green
