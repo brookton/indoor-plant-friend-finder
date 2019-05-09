@@ -162,7 +162,7 @@ def prompt_to_stay_or_go
 
     def quiz_comlete
       puts "Here is your new plant friend!"
-      puts #returned result from comparison function...
+      puts result
     end
 
     prompt_to_return
