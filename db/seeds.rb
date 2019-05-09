@@ -2,11 +2,11 @@ Plant.destroy_all
 
 orchid = Plant.create(
   name: "Orchid",
-  difficulty: 5,
-  light: "bright indirect light",
+  difficulty: 3,
+  light: "indirect",
   flowering: true,
   succulent: false,
-  medicinal: 'null',
+  medicinal: false,
   safe: true,
   clean_air: true,
   care: "Light must be filtered, indirect. Dark green leaves mean a
@@ -22,10 +22,10 @@ orchid = Plant.create(
 amaryllis  = Plant.create(
   name: "Amaryllis",
   difficulty: 2,
-  light: "bright light",
+  light: "bright",
   flowering: true,
   succulent: false,
-  medicinal: 'null',
+  medicinal: false,
   safe: false,
   clean_air: true,
   care: "From September place the plant pot in a cool spot
@@ -41,10 +41,10 @@ amaryllis  = Plant.create(
 spider_lily = Plant.create(
   name: "Spider Lily",
   difficulty: 3,
-  light: "bright light",
+  light: "bright",
   flowering: true,
   succulent: false,
-  medicinal: 'null',
+  medicinal: false,
   safe: false,
   clean_air: true,
   care: "Pleasing this plant species requires plenty of water and sunlight,
@@ -59,10 +59,10 @@ spider_lily = Plant.create(
 bird_of_paradise = Plant.create(
   name: "Bird of Paradise",
   difficulty: 1,
-  light: "bright indirect light",
+  light: "indirect",
   flowering: true,
   succulent: false,
-  medicinal: 'null',
+  medicinal: false,
   safe: false,
   clean_air: true,
   care: "The plant grows to over 6 feet tall, and is designed to fully support
@@ -82,10 +82,10 @@ bird_of_paradise = Plant.create(
 calla_lily = Plant.create(
   name: "Calla lily",
   difficulty: 2,
-  light: "bright light",
+  light: "bright",
   flowering: true,
   succulent: false,
-  medicinal: 'null',
+  medicinal: false,
   safe: false,
   clean_air: true,
   care: "Zantedeschia aethiopica is a water loving plant.

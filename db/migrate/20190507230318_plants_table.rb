@@ -6,7 +6,7 @@ class PlantsTable < ActiveRecord::Migration[5.2]
       t.string :light
       t.boolean :flowering
       t.boolean :succulent
-      t.text :medicinal
+      t.boolean :medicinal
       t.boolean :safe
       t.boolean :clean_air
       t.text :care
