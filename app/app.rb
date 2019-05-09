@@ -6,10 +6,10 @@ class NewApp < ActiveRecord::Base
   def self.welcome
     puts ""
     puts "Welcome to Plant Me Baby -- your indoor plant friend finder.".bold.green.on_blue
-    puts ""
   end
 
   def self.intro
+    puts ""
     puts "How would you like to find your perfect plant?".bold.blue.on_green
     puts " 1 ".bold.magenta.on_green + " - Take the plant friend finder quiz!".red
     puts " 2 ".bold.magenta.on_green + " - Explore air improving plants.".magenta
@@ -41,9 +41,9 @@ class NewApp < ActiveRecord::Base
     when "7"
       puts "good for you!".red.on_green
     when "8"
-      puts "good for you!".red.on_green
+      puts "Okay! Bye!".red.on_green
     when "exit"
-      puts "good for you!".red.on_green
+      puts "Okay! Bye!".red.on_green
     when "no"
       puts "ok then... try again".red.on_yellow
       self.intro

@@ -1,3 +1,4 @@
+require_relative '../config/environment.rb'
 #class PlantControl < ActiveRecord::Base
 #  belongs_to :NewApp
 
@@ -16,15 +17,30 @@ def air_improvement
   puts "Here's are names of NASA's Clean Air Certified indoor plants.".bold.green.on_blue
   puts ""
   puts "Select a number for more info or exit to return to main menu.".bold.blue.on_green
-  arr.each_with_index do |name, index|
-    puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
-  end
+    arr.each_with_index do |name, index|
+      puts " #{index+1} ".bold.magenta.on_green + " - " + name.bold.green
+    end
+  puts "exit".bold.green.on_magenta + " - " + "Main Menu"
+  puts "quit".bold.red.on_green + " - " + "Quit"
+  z = arr.length
   x = gets.chomp
-  #binding.pry
-  y = x.to_i
-  y = y - 1
-  search = arr[y]
-  plant_info(search)
+  q = x.to_i
+    #binding.pry
+    if x == "exit"
+      NewApp.intro
+    elsif x == "quit"
+      puts "Okay! Bye!".green.on_red
+    elsif q <= arr.length
+      #binding.pry
+      w = q - 1
+      search = arr[w]
+      plant_info(search)
+    else
+      puts ""
+      puts "Invalid input. Please try again".bold.green.on_red
+      puts ""
+      air_improvement
+    end
   #binding.pry
 end
 
