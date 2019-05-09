@@ -1,5 +1,5 @@
 require_relative '../config/environment.rb'
-require 'colored'
+
 
 class NewApp < ActiveRecord::Base
 
