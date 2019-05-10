@@ -97,7 +97,222 @@ calla_lily = Plant.create(
   images: "https://google.com/search?q=cala%20lily&tbm=isch"
 )
 
+boston_fern = Plant.new(
+  name: "Boston Fern",
+  difficulty: 2,
+  light: "indirect",
+  flowering: false,
+  succulent: false,
+  medicinal: false,
+  safe: true,
+  clean_air: true,
+  care: "When it gets too cold this plant will go into
+   a kind of dormancy period until conditions become correct.
+    However, if the right conditions are provided, such as high
+     humidity, enough indirect sunlight and warm enough temperatures,
+      the Boston fern will be fine when taken back indoors.
+      Many of them do lose leaves once they are brought inside,
+         which is of no major concern.....just keep
+          providing the right care and conditions.",
+  propogation: true,
+  images: "https://google.com/search?q=boston%20fern&tbm=isch"
+)
 
+  aloe_vera= Plant.new(
+    name: "Aloe Vera",
+    difficulty: 1,
+    light: "bright",
+    flowering: false,
+    succulent: true,
+    medicinal: true,
+    safe: true,
+    clean_air: true,
+    care: "The Aloe Vera thrives on bright light conditions,
+    but not direct sunlight. Heat is fine because they react
+     similar to a cacti in hot conditions. Bright rather than
+      light (direct), is the key.",
+    propogation: true,
+    images: "https://google.com/search?q=aloe%20vera&tbm=isch"
+)
+
+  bunny_ear = Plant.new(
+    name: "Bunny Ear",
+    difficulty: 2,
+    light: "indirect",
+    flowering: false,
+    succulent: true,
+    medicinal: false,
+    safe: true,
+    clean_air: false,
+    care: "Like most cacti, this specimen demands
+     sandy soil-bases that drain easily. It is usually happy
+      with the pre-packaged cactus soil found in common
+       hardware stores. To increase drainage for a picky plant,
+        mix in a 1:1 ratio of perlite or bark.",
+    propogation: true,
+    images: "https://google.com/search?q=bunny%20ear&tbm=isch"
+)
+
+  donkeys_tail = Plant.new(
+  name: "Donkey's Tail",
+  difficulty: 3,
+  light: "bright",
+  flowering: true,
+  succulent: true,
+  medicinal: false,
+  safe: false,
+  clean_air: false,
+  care: " A Donkey’s Tail plant needs at least four hours of sun or
+  very bright light every day. If it gets insufficient light the
+  new growth will be small, pale, and weak. Succulent Plants need
+  to dry out before you water and a Donkey’s Tail plant is no
+  exception. Water well and then do not water again until the soil
+  has thoroughly dried out. Over-watering a Donkey's Tail plant
+  or any Succulent Plant is the easiest way to kill it.",
+  propogation: true,
+  images: "https://google.com/search?q=donkeys%20tail&tbm=isch"
+)
+
+tiger_jaws = Plant.new(
+  name: "Tiger Jaws",
+  difficulty: 2,
+  light: "indirect",
+  flowering: true,
+  succulent: true,
+  medicinal: false,
+  safe: true,
+  clean_air: true,
+  care: "A thorough watering is needed when the top soil
+   is becoming slightly dry to the touch. During winter cut
+    watering down and let the soil dry out much more. A sure
+     way to kill this plant is to overwater it during the winter.
+      Never leave the plant standing in water.",
+  propogation: true,
+  images: "https://google.com/search?q=tiger%20jaws&tbm=isch"
+)
+
+maidenhair_fern = Plant.new(
+  name: "Maidenhair Fern",
+  difficulty: 3,
+  light: "indirect",
+  flowering: false,
+  succulent: false,
+  medicinal: false,
+  safe: true,
+  clean_air: true,
+  care: "A place with indirect sun is best suited for this fern.
+   If you can provide a fairly shaded place with small amounts of
+    filtered sun then your on to a winner. In their natural woodland
+     habitat they would be shaded by trees, but receive some spots of sun.",
+  propogation: true,
+  images: "https://google.com/search?q=maidenhair%20fern&tbm=isch"
+)
+
+  african_violet = Plant.new(
+  name: "African Violet",
+  difficulty: 1,
+  light: "bright",
+  flowering: true,
+  succulent: false,
+  medicinal: false,
+  safe: true,
+  clean_air: true,
+  care: "Room temperatures of around 65°f / 16°c --- 75°f /
+   24°c are ideal. Try not to allow temperatures to decrease
+   lower than 60°f / 15.5°c and it's advised to avoid cold drafts
+    or abrupt temperature changes.",
+  propogation: true,
+  images: "https://google.com/search?q=african%20violet&tbm=isch"
+)
+
+pothos_jade = Plant.new(
+    name: "Pothos",
+    difficulty: 1,
+    light: "low",
+    flowering: true,
+    succulent: false,
+    medicinal: false,
+    safe: false,
+    clean_air: true,
+    care: "Origin: French Polynesia. Epipremnum aureum, or Pothos, is a tropical
+    aroid vine in the family Araceae. Like other closely-related aroids, this
+    plant's leaves will change in shape with age (similar to a Monstera). The
+    leaves can be found in the wild sprawled out along the ground and climbing
+    up trees. Considered to be in the monstera subfamily Monsteroideae, these
+    plants can truly grow monsterous! In mature plants, the leaves can grow
+    to be longer than 3 feet long. Pothos have the ability to spontaneously
+    generate variegation, which has led to several cultivars of variegation
+    and color– marble, neon, and classic jade.
+    Pothos plants do well in temperatures between 55° and 80°F (12.8°-26.7°C).
+      If temperatures drop below 45°F (7.2°C), a pothos plant stops growing and
+      the leaves turn black.
+    Pothos plants are poisonous plants with a level #2 toxicity. ",
+    propogation: true,
+    images: "https://google.com/search?q=pothos&tbm=isch"
+)
+
+pilea = Plant.new(
+    name: "Aluminum plant",
+    difficulty: 2,
+    light: "bright",
+    flowering: true,
+    succulent: false,
+    medicinal: false,
+    safe: true,
+    clean_air: true,
+    care: "The Aluminum plant, Pilea cadierei, is an attractive hanging
+    or table plant native to China and Viet Nam. This particular variety
+    of Pilea is grown for its attractive leaves rather than its very small flowers.
+    An Aluminum Plant needs bright indirect light. Direct sun burns the leaves
+    and not enough light causes the plant to become leggy as it
+    reaches for the light.",
+    propogation: true,
+    images: "https://google.com/search?q=aluminum%20plant&tbm=isch"
+)
+#
+
+baby_rubber_tree = Plant.new(
+  name: "Baby Rubber Tree",
+  difficulty: 1,
+  light: "indirect",
+  flowering: false,
+  succulent: true,
+  medicinal: true,
+  safe: true,
+  clean_air: true,
+  care: "The baby rubber tree plant, PEPEROMIA OBTUSIFOLIA, has over 1000
+  varieties of peperomia plants and most are native to Central and South America.
+   All peperomia plants, which belong to the Pepper Family,
+   are semi- succulents with very similar care requirements.
+   Allow the top 50% of the soil to dry out before you water.
+   Over-watering, resulting in root-rot, is the main cause
+   of serious peperomia plant problems. It’s best to water these
+   plants from the bottom.",
+  propogation: true,
+  images: "https://google.com/search?q=aluminum%20plant&tbm=isch"
+)
+
+zz_plant = Plant.new(
+  name: "ZZ Plant",
+  difficulty: 1,
+  light: "indirect",
+  flowering: false,
+  succulent: true,
+  medicinal: false,
+  safe: false,
+  clean_air: false,
+  care: "ZZ plants, Zamioculcas zamiifolia, are beautiful, unique, almost
+  impossible to kill succulent houseplants that burst onto the market a
+  few years ago. They have become an immediate hit. ZZ plants have long stems
+  covered in hundreds of round, plump, shiny green leaves (or leaflets as they
+  are called. These plants, native to Eastern Africa, are very drought
+  resistant plants thanks to their rhizomatous roots that store water.
+  ZZ plants may be one of the hardiest and most forgiving indoor plants
+  I can recommend.Zamioculcas zamiifolia are extremely Poisonous Houseplants.
+  ZZ plants have a #4 (the highest) toxicity level.",
+  propogation: true,
+  images: "https://google.com/search?q=zz%20plant&tbm=isch"
+)
 
 # Plant Categories: https://www.houseplantsexpert.com/indoor-plants-lighting-guide.html
 # Plant Data: https://www.houseplant411.com/houseplant     https://garden.org

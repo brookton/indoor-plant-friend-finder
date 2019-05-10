@@ -38,9 +38,9 @@ class Quiz < ActiveRecord::Base
     puts ""
     puts "How much attention can you give your new plant friend?".bold.blue.on_green
     puts "Or type 'exit' to return to the main menu.".bold.blue.on_green
-    puts " 1 ".bold.blue.on_green + "I should hardly have to look at it".red
-    puts " 2 ".bold.blue.on_green + "I can commit to watering it a couple times a week".magenta
-    puts " 3 ".bold.blue.on_green + "Call me tiger-lily mom".yellow
+    puts " 1 ".bold.blue.on_green + "It should be hard for me to kill".red
+    puts " 2 ".bold.blue.on_green + "I'm good about watering once a week'".magenta
+    puts " 3 ".bold.blue.on_green + "Humidity? Mulitple waterings a week? I'll keep it alive no problem.".yellow
     x = gets.chomp
     case x
     when "1"
@@ -79,15 +79,15 @@ class Quiz < ActiveRecord::Base
     when "1"
       @@user_hash[:light] = "bright"
       next_question
-      self.quiz_q_3
+      self.quiz_q_24
     when "2"
       @@user_hash[:light] = "indirect"
       next_question
-      self.quiz_q_3
+      self.quiz_q_24
     when "3"
       @@user_hash[:light] = "low"
       next_question
-      self.quiz_q_3
+      self.quiz_q_24
     when "exit"
       NewApp.intro
     when "quit"
@@ -95,6 +95,30 @@ class Quiz < ActiveRecord::Base
     else
       invalid
       self.quiz_q_2
+    end
+  end
+
+  def self.quiz_q_24
+    puts ""
+    puts "Should your new plant be low water?".bold.blue.on_green
+    puts "Do you prefer succulents or cacti?".bold.blue.on_green
+    puts " 1 ".bold.blue.on_green + "Yes!".red
+    puts " 2 ".bold.blue.on_green + "Meh.".magenta
+    x = gets.chomp
+    case x
+    when "1"
+      @@user_hash[:succulent] = true
+      self.quiz_q_3
+    when "2"
+      @@user_hash[:succulent] = false
+      self.quiz_q_3
+    when "exit"
+      NewApp.intro
+    when "quit"
+      bye
+    else
+      invalid
+      self.quiz_q_24
     end
   end
 
@@ -180,17 +204,14 @@ class Quiz < ActiveRecord::Base
     puts "Or type 'exit' to return to the main menu.".bold.blue.on_green
     puts " 1 ".bold.blue.on_green + "Yes!".red
     puts " 2 ".bold.blue.on_green + "Meh.".magenta
+    puts ""
     x = gets.chomp
     case x
       when "1"
         @@user_hash[:clean_air] = true
-        next_question
-        self.quiz_complete
         self.quiz_result
       when "2"
         @@user_hash[:clean_air] = true
-        next_question
-        self.quiz_complete
         self.quiz_result
       when "exit"
         NewApp.intro
@@ -203,7 +224,7 @@ class Quiz < ActiveRecord::Base
   end
 
     def self.quiz_complete
-      puts "Here is your new plant friend!"
+      puts "Here is your new plant friend!".blue.on_green
       #quiz_result
       #prompt_to_return
     end
@@ -214,12 +235,14 @@ class Quiz < ActiveRecord::Base
       arr = Plant.where(@@user_hash).pluck(:name)
       #binding.pry
       if arr.length == 0
+        puts "That's the end of our test!".blue.on_green
+        puts "Our database needs some expansions.".blue.on_green
         puts ""
-        puts "Sorry, we weren't able to match you."
-        puts "You're a little too picky"
-        puts ""
+        puts "Sorry, we weren't able to match you.".blue.on_green
+        puts "Please check back soon for updates!".blue.on_green
         prompt_to_return
       else
+        self.quiz_complete
         arr.each_with_index do |name, index|
           puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
         end
