@@ -1,8 +1,10 @@
 require_relative '../config/environment.rb'
-require 'colored'
+require 'sinatra/activerecord'
 require 'pry'
 
 class PlantAdder < ActiveRecord::Base
+  #has_many :plants
+
   @@new_plant_hash = {}
 
   def self.welcome
@@ -364,12 +366,18 @@ class PlantAdder < ActiveRecord::Base
     puts "It may be easier to type out these notes in a text editor, then copy & paste them".bold.green
     puts "Only press return/enter when you're ready to submit your response".bold.red
     puts "  "
+    #binding.pry
     x = gets.chomp
         @@new_plant_hash[:care] = x
         self.quiz_complete
     end
 
+    # def save
+    # Plants.import @@new_plant_hash
+    # end
+
     def self.quiz_complete
+
       sleep 0.2
       puts "...".red
       sleep 0.5
@@ -388,6 +396,7 @@ class PlantAdder < ActiveRecord::Base
       sleep 0.5
       puts "      " + "now submitting all your data".cyan.on_blue
       puts " "
+      plant = Plant.create @@new_plant_hash
       sleep 0.5
       puts "............".green
       sleep 0.2
@@ -401,7 +410,9 @@ class PlantAdder < ActiveRecord::Base
       sleep 1
       puts "           " + "THANK YOU TIMES FOREVER!".bold.blue_on_green
       puts "     " + "YOU'VE HELPED PEOPLE FIND FRIENDS!".bold.blue_on_green
-      #binding.pry
-      prompt_to_return
+      #prompt_to_return
     end
+
+    #plant = Plant.new @@new_plant_hash
+
 end
