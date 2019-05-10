@@ -16,8 +16,7 @@ orchid = Plant.create(
   Ideal temperatures for the flower buds to set should be 65°-70°
   during the day and 10°-15° cooler at night. Propigation by division",
   propogation: true,
-  images: "https://google.com/search?q=orchid&tbm=isch"
-)
+  images: "https://google.com/search?q=orchid&tbm=isch")
 
 amaryllis  = Plant.create(
   name: "Amaryllis",
@@ -35,8 +34,7 @@ amaryllis  = Plant.create(
     and fertilize once every two weeks.
    You can now expect new growth and flowers during winter.",
   propogation: true,
-  images: "https://google.com/search?q=Amaryllis&tbm=isch"
-)
+  images: "https://google.com/search?q=Amaryllis&tbm=isch")
 
 spider_lily = Plant.create(
   name: "Spider Lily",
@@ -53,8 +51,7 @@ spider_lily = Plant.create(
      will easily add another foot (30cm) of length when it is fully bloomed.
   The flower produces a strong vanilla scent.",
   propogation: true,
-  images: "https://google.com/search?q=spider%20lily&tbm=isch"
-)
+  images: "https://google.com/search?q=spider%20lily&tbm=isch")
 
 bird_of_paradise = Plant.create(
   name: "Bird of Paradise",
@@ -76,8 +73,7 @@ bird_of_paradise = Plant.create(
         flowering, however, this plant will provide you with years
         of delight.",
   propogation: true,
-  images: "https://google.com/search?q=bird%20of%20paradise&tbm=isch"
-)
+  images: "https://google.com/search?q=bird%20of%20paradise&tbm=isch")
 
 calla_lily = Plant.create(
   name: "Calla lily",
@@ -94,10 +90,9 @@ calla_lily = Plant.create(
   Keep the soil always moist, but never allow water to sit in the container.
   Too much water will cause the bulb to rot.",
   propogation: true,
-  images: "https://google.com/search?q=cala%20lily&tbm=isch"
-)
+  images: "https://google.com/search?q=cala%20lily&tbm=isch")
 
-boston_fern = Plant.new(
+boston_fern = Plant.create(
   name: "Boston Fern",
   difficulty: 2,
   light: "indirect",
@@ -115,10 +110,9 @@ boston_fern = Plant.new(
          which is of no major concern.....just keep
           providing the right care and conditions.",
   propogation: true,
-  images: "https://google.com/search?q=boston%20fern&tbm=isch"
-)
+  images: "https://google.com/search?q=boston%20fern&tbm=isch")
 
-  aloe_vera= Plant.new(
+  aloe_vera= Plant.create(
     name: "Aloe Vera",
     difficulty: 1,
     light: "bright",
@@ -132,10 +126,9 @@ boston_fern = Plant.new(
      similar to a cacti in hot conditions. Bright rather than
       light (direct), is the key.",
     propogation: true,
-    images: "https://google.com/search?q=aloe%20vera&tbm=isch"
-)
+    images: "https://google.com/search?q=aloe%20vera&tbm=isch")
 
-  bunny_ear = Plant.new(
+  bunny_ear = Plant.create(
     name: "Bunny Ear",
     difficulty: 2,
     light: "indirect",
@@ -150,10 +143,9 @@ boston_fern = Plant.new(
        hardware stores. To increase drainage for a picky plant,
         mix in a 1:1 ratio of perlite or bark.",
     propogation: true,
-    images: "https://google.com/search?q=bunny%20ear&tbm=isch"
-)
+    images: "https://google.com/search?q=bunny%20ear&tbm=isch")
 
-  donkeys_tail = Plant.new(
+  donkeys_tail = Plant.create(
   name: "Donkey's Tail",
   difficulty: 3,
   light: "bright",
@@ -170,10 +162,9 @@ boston_fern = Plant.new(
   has thoroughly dried out. Over-watering a Donkey's Tail plant
   or any Succulent Plant is the easiest way to kill it.",
   propogation: true,
-  images: "https://google.com/search?q=donkeys%20tail&tbm=isch"
-)
+  images: "https://google.com/search?q=donkeys%20tail&tbm=isch")
 
-tiger_jaws = Plant.new(
+tiger_jaws = Plant.create(
   name: "Tiger Jaws",
   difficulty: 2,
   light: "indirect",
@@ -188,10 +179,9 @@ tiger_jaws = Plant.new(
      way to kill this plant is to overwater it during the winter.
       Never leave the plant standing in water.",
   propogation: true,
-  images: "https://google.com/search?q=tiger%20jaws&tbm=isch"
-)
+  images: "https://google.com/search?q=tiger%20jaws&tbm=isch")
 
-maidenhair_fern = Plant.new(
+maidenhair_fern = Plant.create(
   name: "Maidenhair Fern",
   difficulty: 3,
   light: "indirect",
@@ -205,10 +195,9 @@ maidenhair_fern = Plant.new(
     filtered sun then your on to a winner. In their natural woodland
      habitat they would be shaded by trees, but receive some spots of sun.",
   propogation: true,
-  images: "https://google.com/search?q=maidenhair%20fern&tbm=isch"
-)
+  images: "https://google.com/search?q=maidenhair%20fern&tbm=isch")
 
-  african_violet = Plant.new(
+  african_violet = Plant.create(
   name: "African Violet",
   difficulty: 1,
   light: "bright",
@@ -222,10 +211,9 @@ maidenhair_fern = Plant.new(
    lower than 60°f / 15.5°c and it's advised to avoid cold drafts
     or abrupt temperature changes.",
   propogation: true,
-  images: "https://google.com/search?q=african%20violet&tbm=isch"
-)
+  images: "https://google.com/search?q=african%20violet&tbm=isch")
 
-pothos_jade = Plant.new(
+pothos_jade = Plant.create(
     name: "Pothos",
     difficulty: 1,
     light: "low",
@@ -248,10 +236,9 @@ pothos_jade = Plant.new(
       the leaves turn black.
     Pothos plants are poisonous plants with a level #2 toxicity. ",
     propogation: true,
-    images: "https://google.com/search?q=pothos&tbm=isch"
-)
+    images: "https://google.com/search?q=pothos&tbm=isch")
 
-pilea = Plant.new(
+pilea = Plant.create(
     name: "Aluminum plant",
     difficulty: 2,
     light: "bright",
@@ -267,11 +254,10 @@ pilea = Plant.new(
     and not enough light causes the plant to become leggy as it
     reaches for the light.",
     propogation: true,
-    images: "https://google.com/search?q=aluminum%20plant&tbm=isch"
-)
-#
+    images: "https://google.com/search?q=aluminum%20plant&tbm=isch")
 
-baby_rubber_tree = Plant.new(
+
+baby_rubber_tree = Plant.create(
   name: "Baby Rubber Tree",
   difficulty: 1,
   light: "indirect",
@@ -289,10 +275,9 @@ baby_rubber_tree = Plant.new(
    of serious peperomia plant problems. It’s best to water these
    plants from the bottom.",
   propogation: true,
-  images: "https://google.com/search?q=aluminum%20plant&tbm=isch"
-)
+  images: "https://google.com/search?q=aluminum%20plant&tbm=isch")
 
-zz_plant = Plant.new(
+zz_plant = Plant.create(
   name: "ZZ Plant",
   difficulty: 1,
   light: "indirect",
@@ -311,8 +296,7 @@ zz_plant = Plant.new(
   I can recommend.Zamioculcas zamiifolia are extremely Poisonous Houseplants.
   ZZ plants have a #4 (the highest) toxicity level.",
   propogation: true,
-  images: "https://google.com/search?q=zz%20plant&tbm=isch"
-)
+  images: "https://google.com/search?q=zz%20plant&tbm=isch")
 
 # Plant Categories: https://www.houseplantsexpert.com/indoor-plants-lighting-guide.html
 # Plant Data: https://www.houseplant411.com/houseplant     https://garden.org

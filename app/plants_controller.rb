@@ -88,7 +88,7 @@ def medicinal
           NewApp.intro
         elsif x == "quit"
           bye
-        elsif q <= arr.length
+        elsif q <= z
           #binding.pry
           w = q - 1
           search = arr[w]
