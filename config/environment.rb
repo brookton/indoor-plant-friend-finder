@@ -1,4 +1,5 @@
 require_relative '../app/plant.rb'
+require_relative '../app/add_plant_quiz.rb'
 require_relative '../app/app_helper.rb'
 require_relative '../app/plants_controller.rb'
 require_relative '../app/plants_namer.rb'
