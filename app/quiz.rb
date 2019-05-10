@@ -224,7 +224,12 @@ class Quiz < ActiveRecord::Base
   end
 
     def self.quiz_complete
-      puts "Here is your new plant friend!".blue.on_green
+      sleep 1
+      puts "        " + "CONGRATULATIONS!!!!".cyan.on_blue
+      sleep 1
+      puts "  " +  "WE FOUND YOU A PLANT FRIEND MATCH: ".green.on_blue
+      sleep 1
+      puts ""
       #quiz_result
       #prompt_to_return
     end
@@ -243,10 +248,31 @@ class Quiz < ActiveRecord::Base
         prompt_to_return
       else
         self.quiz_complete
-        arr.each_with_index do |name, index|
-          puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
-        end
+        puts ""
+        puts "Select a number for more info or exit to return to main menu.".bold.blue.on_green
+          arr.each_with_index do |name, index|
+            puts " #{index+1} ".bold.blue.on_green + " - " + name.bold.green
+          end
         exit_or_quit
+        puts ""
+        puts ""
+        z = arr.length
+        x = gets.chomp
+        q = x.to_i
+        #binding.pry
+        if x == "exit"
+          NewApp.intro
+        elsif x == "quit"
+          bye
+        elsif q <= arr.length
+          #binding.pry
+          w = q - 1
+          search = arr[w]
+          plant_info(search)
+        else
+          invalid
+          self.quiz_result
+        end
       end
     end
 
