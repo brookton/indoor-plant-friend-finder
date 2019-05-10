@@ -83,13 +83,11 @@ def medicinal
         z = arr.length
         x = gets.chomp
         q = x.to_i
-        #binding.pry
         if x == "exit"
           NewApp.intro
         elsif x == "quit"
           bye
-        elsif q <= z
-          #binding.pry
+        elsif q <= arr.length
           w = q - 1
           search = arr[w]
           plant_info(search)
@@ -97,8 +95,9 @@ def medicinal
           invalid
           medicinal
         end
-    end
-end
+      end
+  end
+
 
 def flowering
   arr = Plant.where(flowering: true).pluck(:name)
