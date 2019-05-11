@@ -225,8 +225,8 @@ class Quiz < ActiveRecord::Base
 
     def self.quiz_complete
       puts "Here is your new plant friend!".blue.on_green
-      #quiz_result
-      #prompt_to_return
+      # quiz_result
+      # prompt_to_return
     end
 
     def self.quiz_result
